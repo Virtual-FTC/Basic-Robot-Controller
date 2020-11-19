@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./OnBotJava/libs/javac.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/OnBotJava/libs/javac.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

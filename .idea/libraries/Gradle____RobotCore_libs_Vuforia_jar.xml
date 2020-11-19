@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./RobotCore/libs/Vuforia.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/RobotCore/libs/Vuforia.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

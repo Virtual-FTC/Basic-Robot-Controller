@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./RobotCore/libs/androidx-rs.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/RobotCore/libs/androidx-rs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
