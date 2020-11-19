@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet/less" type="text/css" href="/css/help.less">
+    <script type="text/javascript" src="/js/less.min.js"></script>
+</head>
+<body>
+<div class="bordered-text-block">
+    <h1>Simulation</h1>
+    <p>Welcome to the Virtual FTC Simulator. To begin, click 'Connect' and then select an OpMode to
+        run, click Init, and
+        then click Start. Click Stop if you want to end the program early.</p>
+    <input id="id_robotvmip" type="text" placeholder="Robot VM IP" width="300px">
+    <button id="id_connect_button"
+            onclick="connectToWebSocketServer()">Connect
+    </button>
+    <h3>Select OpMode</h3>
+    <div class="form-group">
+        <label for="id_programs">Your Programs</label>
+        <select id="id_programs"
+                class="form-control"
+                style="max-width: 300px"></select>
+    </div>
+
+    <h3>OpMode Controller</h3>
+
+    <button id="id_init_button" class="aligned-select-button" onclick="initProgram()" disabled>Init
+    </button>
+    <button id="id_start_button" class="aligned-select-button" onclick="startProgram()"
+            disabled>
+        Start
+    </button>
+    <button id="id_stop_button" class="aligned-select-button" onclick="stopProgram()" disabled>
+        Stop
+    </button>
+</div>
+<script type="text/javascript" src="/js/rc_config.js"></script>
+<script type="text/javascript" src="/js/util.js"></script>
+
+
+<script type="text/javascript">
+var ws;
+function connectToWebSocketServer() {
+	if ("WebSocket" in window) {
+		ws = new WebSocket("ws://192.168.1.62:9876/echo");
+
+		ws.onopen = function() {
+			ws.send("IP:" + document.getElementById("id_robotvmip").value);
+		};
+
+		ws.onmessage = function(evt) {
+			var received_msg = evt.data;
+			var opModesJsonObject = JSON.parse(received_msg);
+			for (var i = 0; i < opModesJsonObject.length; i++) {
+				var jsonObject = opModesJsonObject[i];
+				var select = document.getElementById("id_programs"),
+					opt = document.createElement("option");
+				opt.value = jsonObject.name;
+				opt.textContent = jsonObject.name;
+				select.appendChild(opt);
+			}
+            document.getElementById("id_init_button").disabled = false;
+            document.getElementById("id_start_button").disabled = true;
+            document.getElementById("id_stop_button").disabled = true;
+		};
+
+		ws.onclose = function() {
+			location.reload();
+		};
+	} else {
+		alert("WebSocket NOT supported by your Browser!");
+	}
+}
+function initProgram() {
+    ws.send("INIT:" + id_programs.value);
+    document.getElementById("id_init_button").disabled = true;
+    document.getElementById("id_start_button").disabled = false;
+    document.getElementById("id_stop_button").disabled = false;
+}
+function startProgram() {
+    ws.send("RUN:" + id_programs.value);
+    document.getElementById("id_init_button").disabled = true;
+    document.getElementById("id_start_button").disabled = true;
+    document.getElementById("id_stop_button").disabled = false;
+}
+function stopProgram() {
+    ws.send("STOP");
+    document.getElementById("id_init_button").disabled = false;
+    document.getElementById("id_start_button").disabled = true;
+    document.getElementById("id_stop_button").disabled = true;
+}
+</script>
+</body>
+</html>

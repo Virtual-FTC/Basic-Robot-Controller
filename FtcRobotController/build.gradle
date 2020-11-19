@@ -1,0 +1,42 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 38
+        versionName "6.0"
+
+        buildConfigField "String", "BUILD_TIME", '"' + (new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ", Locale.ROOT).format(new Date())) + '"'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    /*
+     * Other Modules
+     */
+    implementation project(':FtcCommon')
+    implementation project(':RobotCore')
+    implementation project(':Inspection')
+    implementation project(':Blocks')
+    implementation project(':Hardware')
+    implementation project(':OnBotJava')
+    implementation project(':RobotServer')
+
+    /*
+     * External
+     */
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+}

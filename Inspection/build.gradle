@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 76
+        versionName "14.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    /*
+     * Other Modules
+     */
+    implementation project(':Hardware')
+    implementation project(':RobotCore')
+
+    /*
+     * External
+     */
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+}
