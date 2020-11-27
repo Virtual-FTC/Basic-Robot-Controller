@@ -39,16 +39,14 @@ import com.qualcomm.robotcore.hardware.basicwebsocket.Topic;
 import com.qualcomm.robotcore.hardware.basicwebsocket.callback.TopicCallback;
 import com.qualcomm.robotcore.hardware.basicwebsocket.messages.Message;
 import com.qualcomm.robotcore.hardware.basicwebsocket.messages.ftc.DcMotorInput;
+import com.qualcomm.robotcore.hardware.configuration.MotorType;
 import com.qualcomm.robotcore.hardware.configuration.typecontainers.MotorConfigurationType;
 import com.qualcomm.robotcore.util.RobotLog;
 
 import org.firstinspires.ftc.robotcore.external.navigation.Rotation;
 import org.firstinspires.ftc.robotcore.internal.system.AppUtil;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-
-import javax.json.JsonObject;
+import java.util.Random;
 
 /**
  * Control a DC Motor attached to a DC Motor Controller
@@ -64,16 +62,36 @@ public class DcMotorImpl implements DcMotor {
 
     protected DcMotorController controller = null;
     protected int portNumber = -1;
-    protected Direction direction = Direction.FORWARD;
     protected MotorConfigurationType motorType = null;
 
-    public static String rosIp = "35.224.117.88";
+    //Proportionate coefficient for RUN_TO_POSITION mode
+    private final double COEFF_PROPORTIONATE = 5.0;
+    //Target position for RUN_TO_POSITION mode
+    private int targetPosition = 0;
 
-    Ros client = null;
+    private final Random random = new Random();
+    private RunMode mode = RunMode.RUN_WITHOUT_ENCODER;
+    protected Direction direction = Direction.FORWARD;
 
-    Topic motorPub;
-    Topic motorOutputPub;
-    private double power = 0.0;
+    //power is the requested speed, normalized to the -1 to +1 range
+    public double power = 0.0;
+
+    //speed is the actual speed, normalized to the -1 to +1 range
+    private double speed = 0.0;
+
+    //actual position of motor
+    public double actualPosition = 0.0;
+
+    //position to use as baseline for encoder tick calculation
+    public double encoderBasePosition = 0.0;
+
+    private double randomErrorFrac = 0.0;
+    private double systematicErrorFrac = 0.0;
+    private double inertia;
+
+    private ZeroPowerBehavior zeroPowerBehavior = ZeroPowerBehavior.BRAKE;
+
+    public double encoderPosition;
 
     //------------------------------------------------------------------------------------------------
     // Construction
@@ -115,43 +133,13 @@ public class DcMotorImpl implements DcMotor {
         this.motorType = motorType;
         RobotLog.v("DcMotorImpl(type=%s)", name);
 
-        motorName = name;
-
-        connectToVM();
+        checkMotorNumberAndUpdateMaster(name);
 
 
         // Clone the initial assigned motor type. This disconnects any subsequent modifications in the
         // fields of the type from the type used here at construction, which is usually / often the master
         // SDK instance for a given type, which ought not to be messed with.
         controller.setMotorType(portNumber, motorType.clone());
-    }
-
-    public static String motorName;
-
-
-    private void connectToVM() {
-        try {
-            client = new Ros(new URI("ws://" + rosIp + ":9091"));
-            client.connect();
-        } catch (URISyntaxException | InterruptedException e) {
-            e.printStackTrace();
-        }
-        motorPub = new Topic(client, "/unity/" + motorName + "/input", "ftc_msgs/DcMotorInput");
-        DcMotorInput toSend = new DcMotorInput(power, "");
-        motorPub.publish(toSend);
-
-
-//        motorOutputPub = new Topic(client, "/unity/" + motorType + "/output", "ftc_msgs/DcMotorOutput");
-//        motorOutputPub.subscribe(new TopicCallback() {
-//            @Override
-//            public void handleMessage(Message message) {
-//                JsonObject data = message.toJsonObject();
-//                if(data.getJsonNumber("encoder_data").doubleValue() != 0) {
-//                    actualPosition = data.getJsonNumber("encoder_data").doubleValue();
-//                    encoderPosition = direction == Direction.REVERSE ? (encoderBasePosition - actualPosition) : -(encoderBasePosition - actualPosition);
-//                }
-//            }
-//        });
     }
 
     //------------------------------------------------------------------------------------------------
@@ -247,27 +235,30 @@ public class DcMotorImpl implements DcMotor {
      */
 
     public static boolean hasToConnectToVM = true;
+
     synchronized public void setPower(double power) {
-//        if(hasToConnectToVM) {
-//            connectToVM();
-//            hasToConnectToVM = false;
-//            try {
-//                Thread.sleep(1000);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//        }
-
         this.power = direction == Direction.REVERSE ? -power : power;
-        publishCmdVel();
-//        if(System.currentTimeMillis() >= currentTime + timeInterval) {
-
-//        }
     }
 
-    public void publishCmdVel() {
-        DcMotorInput dcMotorInputToSend = new DcMotorInput(power, "");
-        motorPub.publish(dcMotorInputToSend);
+    private void checkMotorNumberAndUpdateMaster(String name) {
+        if (name.equals("frontLeft")) {
+            DcMotorMaster.setDcMotor1(this);
+        } else if (name.equals("frontRight")) {
+            DcMotorMaster.setDcMotor2(this);
+        } else if (name.equals("backLeft")) {
+            DcMotorMaster.setDcMotor3(this);
+        } else if (name.equals("backRight")) {
+            DcMotorMaster.setDcMotor4(this);
+        } else if (name.equals("intake")) {
+            DcMotorMaster.setDcMotor5(this);
+        } else if (name.equals("hopper")) {
+            DcMotorMaster.setDcMotor6(this);
+        } else if (name.equals("leftShooter")) {
+            DcMotorMaster.setDcMotor7(this);
+        } else if (name.equals("rightShooter")) {
+            DcMotorMaster.setDcMotor8(this);
+            DcMotorMaster.start();
+        }
     }
 
 

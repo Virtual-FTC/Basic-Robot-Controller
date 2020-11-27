@@ -12,7 +12,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="HGAHABB6" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_1" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -39,9 +39,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qualcomm.robotcore.hardware" />
+      <recent name="com.qualcomm.robotcore.hardware.basicwebsocket.messages.ftc" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mihir\Downloads\Extracted-RC-master\Extracted-RC-master\RobotCore\src\main\java\com\qualcomm\robotcore\hardware\basicwebsocket" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -125,25 +134,29 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1605740942587" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1605760894833">
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1605836761706">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1605760894833" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1605760894833">
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1605836761706" />
+    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1605836761706">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1605760894833" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1605760894833">
+    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1605836761706" />
+    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1605836761706">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1605760894833" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1605760894833">
+    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1605836761706" />
+    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1605836761706">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1605760894833" />
-    <state x="604" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1605745373055">
+    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1605836761706" />
+    <state x="396" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1606464319994">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="604" y="321" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605745373055" />
+    <state x="396" y="324" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606464319994" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1606466408140">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1606466408140" />
   </component>
 </project>

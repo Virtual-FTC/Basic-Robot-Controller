@@ -106,6 +106,7 @@ import com.qualcomm.ftccommon.configuration.RobotConfigFileManager;
 import com.qualcomm.hardware.lynx.EmbeddedControlHubModule;
 import com.qualcomm.robotcore.hardware.Blinker;
 import com.qualcomm.robotcore.hardware.DcMotorImpl;
+import com.qualcomm.robotcore.hardware.DcMotorMaster;
 import com.qualcomm.robotcore.hardware.USBAccessibleLynxModule;
 import com.qualcomm.robotcore.hardware.VisuallyIdentifiableHardwareDevice;
 import com.qualcomm.robotcore.hardware.ScannedDevices;
@@ -254,7 +255,7 @@ public abstract class FtcEventLoopBase extends TooTallWebSocketServer implements
             }
             String ip = sb.toString();
             System.out.println("IP: " + ip);
-            DcMotorImpl.rosIp = ip;
+            DcMotorMaster.rosIp = ip;
         }
     }
 

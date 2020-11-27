@@ -32,6 +32,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
 package com.qualcomm.robotcore.eventloop.opmode;
 
 import com.qualcomm.robotcore.hardware.DcMotorImpl;
+import com.qualcomm.robotcore.hardware.DcMotorMaster;
 import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.basicwebsocket.Ros;
@@ -100,25 +101,7 @@ public abstract class OpMode {
    */
 
 
-  public void init() {
-    DcMotorImpl.hasToConnectToVM = true;
-    try {
-      Ros client = new Ros(new URI("ws://" + DcMotorImpl.rosIp + ":9091"));
-      client.connect();
-      try {
-        Thread.sleep(1000);
-      } catch (InterruptedException e) {
-        e.printStackTrace();
-      }
-      Topic configPub = new Topic(client, "/config/motors", "std_msgs/String");
-      configPub.publish(new com.qualcomm.robotcore.hardware.basicwebsocket.messages.std.String("[{\"frc\": \"frontLeft\", \"sim\": \"motor1\"},{\"frc\": \"frontRight\", \"sim\": \"motor2\"},{\"frc\": \"backLeft\", \"sim\": \"motor3\"},{\"frc\": \"backRight\", \"sim\": \"motor4\"},{\"frc\": \"intake\", \"sim\": \"motor5\"},{\"frc\": \"hopper\", \"sim\": \"motor6\"},{\"frc\": \"leftShooter\", \"sim\": \"motor7\"},{\"frc\": \"rightShooter\", \"sim\": \"motor8\"}]"));
-      client.disconnect();
-    } catch (InterruptedException ignore) {
-
-    } catch (URISyntaxException ignore) {
-
-    }
-  }
+  public void init() {};
 
   /**
    * User defined init_loop method
