@@ -13,10 +13,9 @@
 <body>
 <div class="bordered-text-block">
     <h1>Simulation</h1>
-    <p>Welcome to the Virtual FTC Simulator. To begin, click 'Connect' and then select an OpMode to
+    <p>Welcome to the Virtual FTC Simulator. To begin, select an OpMode to
         run, click Init, and
         then click Start. Click Stop if you want to end the program early.</p>
-    <input id="id_robotvmip" type="text" placeholder="Robot VM IP" width="300px">
     <button id="id_connect_button"
             onclick="connectToWebSocketServer()">Connect
     </button>
@@ -48,10 +47,11 @@
 var ws;
 function connectToWebSocketServer() {
 	if ("WebSocket" in window) {
-		ws = new WebSocket("ws://192.168.1.62:9876/echo");
+		ws = new WebSocket("ws://192.168.49.1:9876/echo");
 
 		ws.onopen = function() {
-			ws.send("IP:" + document.getElementById("id_robotvmip").value);
+		    alert("Connected");
+			ws.send("WebSocket Connection Validation Test");
 		};
 
 		ws.onmessage = function(evt) {

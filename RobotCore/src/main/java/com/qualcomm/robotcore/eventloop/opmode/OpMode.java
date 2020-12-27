@@ -31,12 +31,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
 
 package com.qualcomm.robotcore.eventloop.opmode;
 
-import com.qualcomm.robotcore.hardware.DcMotorImpl;
-import com.qualcomm.robotcore.hardware.DcMotorMaster;
 import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
-import com.qualcomm.robotcore.hardware.basicwebsocket.Ros;
-import com.qualcomm.robotcore.hardware.basicwebsocket.Topic;
 import com.qualcomm.robotcore.robocol.TelemetryMessage;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;

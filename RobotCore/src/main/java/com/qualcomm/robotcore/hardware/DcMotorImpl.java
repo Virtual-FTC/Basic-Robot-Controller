@@ -34,12 +34,6 @@ package com.qualcomm.robotcore.hardware;
 import androidx.annotation.NonNull;
 
 import com.qualcomm.robotcore.R;
-import com.qualcomm.robotcore.hardware.basicwebsocket.Ros;
-import com.qualcomm.robotcore.hardware.basicwebsocket.Topic;
-import com.qualcomm.robotcore.hardware.basicwebsocket.callback.TopicCallback;
-import com.qualcomm.robotcore.hardware.basicwebsocket.messages.Message;
-import com.qualcomm.robotcore.hardware.basicwebsocket.messages.ftc.DcMotorInput;
-import com.qualcomm.robotcore.hardware.configuration.MotorType;
 import com.qualcomm.robotcore.hardware.configuration.typecontainers.MotorConfigurationType;
 import com.qualcomm.robotcore.util.RobotLog;
 
@@ -241,6 +235,7 @@ public class DcMotorImpl implements DcMotor {
     }
 
     private void checkMotorNumberAndUpdateMaster(String name) {
+        System.out.println("nameme: " + name);
         if (name.equals("frontLeft")) {
             DcMotorMaster.setDcMotor1(this);
         } else if (name.equals("frontRight")) {

@@ -247,16 +247,17 @@ public abstract class FtcEventLoopBase extends TooTallWebSocketServer implements
         System.out.println("message: " + message);
         if((!opModeList.equals("")) && message.equals("WebSocket Connection Validation Test")) {
             conn.send(opModeList);
-        } else if (message.contains("IP:")) {
-            conn.send(opModeList);
-            StringBuilder sb = new StringBuilder();
-            for(int i = 3; i < message.length(); i++) {
-                sb.append(message.charAt(i));
-            }
-            String ip = sb.toString();
-            System.out.println("IP: " + ip);
-            DcMotorMaster.rosIp = ip;
         }
+//        } else if (message.contains("IP:")) {
+//            conn.send(opModeList);
+////            conn.send(opModeList);
+////            StringBuilder sb = new StringBuilder();
+////            for(int i = 3; i < message.length(); i++) {
+////                sb.append(message.charAt(i));
+////            }
+////            String ip = sb.toString();
+////            System.out.println("IP: " + ip);
+//        }
     }
 
     //----------------------------------------------------------------------------------------------

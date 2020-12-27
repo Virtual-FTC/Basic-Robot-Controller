@@ -6,7 +6,119 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e99090a-1959-476e-b0b4-097139fe7cc1" name="Default Changelist" comment="" />
+    <list default="true" id="5e99090a-1959-476e-b0b4-097139fe7cc1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_0_0_0_nightly_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_0_0_0_nightly_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Blocks/Blocks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Blocks/Blocks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/FtcCommon/FtcCommon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/FtcCommon/FtcCommon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/FtcRobotController/FtcRobotController.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/FtcRobotController/FtcRobotController.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Hardware/Hardware.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Hardware/Hardware.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Inspection/Inspection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Inspection/Inspection.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/OnBotJava/OnBotJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/OnBotJava/OnBotJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/RobotCore/RobotCore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/RobotCore/RobotCore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/RobotServer/RobotServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/RobotServer/RobotServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/TeamCode/TeamCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/TeamCode/TeamCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcCommon/src/main/java/com/qualcomm/ftccommon/FtcEventLoopBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/FtcCommon/src/main/java/com/qualcomm/ftccommon/FtcEventLoopBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/eventloop/opmode/LinearOpMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/eventloop/opmode/LinearOpMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/eventloop/opmode/OpMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/eventloop/opmode/OpMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/DcMotorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/DcMotorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/DcMotorMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/DcMotorMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/JRosbridge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/JsonWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/Ros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/RosUDP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/Topic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/UDPSocket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/UdpRos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/UdpTopic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/WebRos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/callback/CallServiceCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/callback/ServiceCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/callback/TopicCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/actionlib/GoalID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/actionlib/GoalStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/actionlib/GoalStatusArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/ftc/DcMotorInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/ftc/DcMotorOutput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/ftc/MotorInputs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/Point32.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/PointStamped.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/Polygon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/PolygonStamped.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/Pose.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/Pose2D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/PoseArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/PoseStamped.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/PoseWithCovariance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/PoseWithCovarianceStamped.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/Quaternion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/QuaternionStamped.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/Transform.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/TransformStamped.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/Twist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/TwistStamped.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/TwistWithCovariance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/TwistWithCovarianceStamped.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/Vector3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/Vector3Stamped.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/Wrench.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/geometry/WrenchStamped.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Bool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Byte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/ByteMultiArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Char.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Duration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Empty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Float32.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Float32MultiArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Float64.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Float64MultiArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Header.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Int16.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Int16MultiArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Int32.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Int32MultiArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Int64.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Int64MultiArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Int8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Int8MultiArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/MultiArrayDimension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/MultiArrayLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/String.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/Time.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/UInt16.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/UInt16MultiArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/UInt32.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/UInt32MultiArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/UInt64.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/UInt64MultiArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/UInt8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/messages/std/UInt8MultiArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/primitives/Duration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/primitives/Primitive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/primitives/Time.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/primitives/TimeBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/services/ServiceRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/services/ServiceResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/basicwebsocket/services/std/Empty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotServer/src/main/assets/simulation.html" beforeDir="false" afterPath="$PROJECT_DIR$/RobotServer/src/main/assets/simulation.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +141,9 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kTu3hZ8GhTo8PeVdQQik1ZeJ7i" />
   <component name="ProjectViewState">
@@ -134,29 +249,33 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1605740942587" />
-    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1605836761706">
+    <state width="1877" height="810" key="GridCell.Tab.0.bottom" timestamp="1609099584727">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1605836761706" />
-    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1605836761706">
+    <state width="1877" height="810" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1609099584727" />
+    <state width="1877" height="810" key="GridCell.Tab.0.center" timestamp="1609099584726">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1605836761706" />
-    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1605836761706">
+    <state width="1877" height="810" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1609099584726" />
+    <state width="1877" height="810" key="GridCell.Tab.0.left" timestamp="1609099584726">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1605836761706" />
-    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1605836761706">
+    <state width="1877" height="810" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1609099584726" />
+    <state width="1877" height="810" key="GridCell.Tab.0.right" timestamp="1609099584727">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1605836761706" />
+    <state width="1877" height="810" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1609099584727" />
     <state x="396" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1606464319994">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="396" y="324" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606464319994" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1606466408140">
+    <state x="656" y="272" width="607" height="536" key="find.popup" timestamp="1609096737095">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1606466408140" />
+    <state x="656" y="272" width="607" height="536" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1609096737095" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1609099608741">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1609099608741" />
   </component>
 </project>

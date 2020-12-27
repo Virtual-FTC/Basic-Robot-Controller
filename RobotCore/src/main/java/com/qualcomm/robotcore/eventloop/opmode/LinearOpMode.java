@@ -1,18 +1,12 @@
 package com.qualcomm.robotcore.eventloop.opmode;
 
-import com.qualcomm.robotcore.hardware.DcMotorImpl;
 import com.qualcomm.robotcore.hardware.TimestampedI2cData;
-import com.qualcomm.robotcore.hardware.basicwebsocket.Ros;
-import com.qualcomm.robotcore.hardware.basicwebsocket.Topic;
 import com.qualcomm.robotcore.util.RobotLog;
 import com.qualcomm.robotcore.util.ThreadPool;
 
-import org.firstinspires.ftc.robotcore.internal.opmode.TelemetryInternal;
 import org.firstinspires.ftc.robotcore.internal.opmode.OpModeManagerImpl;
-import org.firstinspires.ftc.robotcore.internal.system.AppUtil;
-import org.firstinspires.ftc.robotcore.internal.ui.UILocation;
+import org.firstinspires.ftc.robotcore.internal.opmode.TelemetryInternal;
 
-import java.net.URI;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
