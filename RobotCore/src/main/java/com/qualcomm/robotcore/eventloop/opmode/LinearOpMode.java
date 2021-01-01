@@ -1,18 +1,13 @@
 package com.qualcomm.robotcore.eventloop.opmode;
 
-import com.qualcomm.robotcore.hardware.DcMotorImpl;
+import com.qualcomm.robotcore.hardware.DcMotorMaster;
 import com.qualcomm.robotcore.hardware.TimestampedI2cData;
-import com.qualcomm.robotcore.hardware.basicwebsocket.Ros;
-import com.qualcomm.robotcore.hardware.basicwebsocket.Topic;
 import com.qualcomm.robotcore.util.RobotLog;
 import com.qualcomm.robotcore.util.ThreadPool;
 
-import org.firstinspires.ftc.robotcore.internal.opmode.TelemetryInternal;
 import org.firstinspires.ftc.robotcore.internal.opmode.OpModeManagerImpl;
-import org.firstinspires.ftc.robotcore.internal.system.AppUtil;
-import org.firstinspires.ftc.robotcore.internal.ui.UILocation;
+import org.firstinspires.ftc.robotcore.internal.opmode.TelemetryInternal;
 
-import java.net.URI;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -161,6 +156,8 @@ public abstract class LinearOpMode extends OpMode {
     @Override
     final public void init() {
         super.init();
+        DcMotorMaster.start();
+
         this.executorService = ThreadPool.newSingleThreadExecutor("LinearOpMode");
         this.helper = new LinearOpModeHelper();
         this.isStarted = false;
@@ -213,6 +210,15 @@ public abstract class LinearOpMode extends OpMode {
      */
     @Override
     final public void stop() {
+        DcMotorMaster.motorImpl1.power = 0.0;
+        DcMotorMaster.motorImpl2.power = 0.0;
+        DcMotorMaster.motorImpl3.power = 0.0;
+        DcMotorMaster.motorImpl4.power = 0.0;
+        DcMotorMaster.motorImpl5.power = 0.0;
+        DcMotorMaster.motorImpl6.power = 0.0;
+        DcMotorMaster.motorImpl7.power = 0.0;
+        DcMotorMaster.motorImpl8.power = 0.0;
+        DcMotorMaster.canRunUDPThreads = false;
 
         /*
          * Get out of dodge. Been here, done this.
