@@ -31,6 +31,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
 
 package com.qualcomm.robotcore.eventloop.opmode;
 
+import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorMaster;
 import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
@@ -98,7 +99,9 @@ public abstract class OpMode {
    */
 
 
-  public void init() {};
+  public void init() {
+    DcMotorMaster.start();
+  };
 
   /**
    * User defined init_loop method
@@ -133,6 +136,14 @@ public abstract class OpMode {
    * The stop method is optional. By default this method takes no action.
    */
   public void stop() {
+    DcMotorMaster.motorImpl1.power = 0.0;
+    DcMotorMaster.motorImpl2.power = 0.0;
+    DcMotorMaster.motorImpl3.power = 0.0;
+    DcMotorMaster.motorImpl4.power = 0.0;
+    DcMotorMaster.motorImpl5.power = 0.0;
+    DcMotorMaster.motorImpl6.power = 0.0;
+    DcMotorMaster.motorImpl7.power = 0.0;
+    DcMotorMaster.motorImpl8.power = 0.0;
     DcMotorMaster.canRunUDPThreads = false;
   };
 

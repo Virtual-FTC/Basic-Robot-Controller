@@ -251,7 +251,7 @@ public class DcMotorImpl implements DcMotor {
             DcMotorMaster.setDcMotor7(this);
         } else if (name.equals("rightShooter")) {
             DcMotorMaster.setDcMotor8(this);
-            DcMotorMaster.start();
+//            DcMotorMaster.start();
         }
     }
 

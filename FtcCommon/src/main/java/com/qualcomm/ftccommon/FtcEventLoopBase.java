@@ -375,7 +375,7 @@ public abstract class FtcEventLoopBase extends TooTallWebSocketServer implements
     }
 
     String opModeList = "";
-//    boolean hasStartedServer = false;
+    boolean hasStartedServer = false;
 
     protected void sendUIState() {
         RobotConfigFile configFile = robotCfgFileMgr.getActiveConfig();
@@ -394,7 +394,10 @@ public abstract class FtcEventLoopBase extends TooTallWebSocketServer implements
         opModeList = SimpleGson.getInstance().toJson(registeredOpModes.getOpModes());
         System.out.println("sdkjfnljdksnflkdajnflkdsnflkdsnflkdsnflkdsnf" + opModeList);
 //        networkConnectionHandler.sendCommand(new Command(CommandList.CMD_NOTIFY_OP_MODE_LIST, opModeList));
-        super.start();
+        if(!hasStartedServer) {
+            hasStartedServer = true;
+            super.start();
+        }
     }
 
     private static int port = 9876;

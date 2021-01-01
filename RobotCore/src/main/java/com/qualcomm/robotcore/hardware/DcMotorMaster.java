@@ -61,23 +61,29 @@ public class DcMotorMaster {
     static Thread UnityUDPReceiveThread;
     static String UnityUdpIpAddress = "192.168.1.49";
     public static boolean canRunUDPThreads;
+    private static DatagramSocket RXsocket;
+    private static DatagramSocket TXsocket;
+    private static int TX_RXCount = 0;
 
     public static void start() {
+        System.out.println("ENTERED START OF DC MOTOR MASTER");
         canRunUDPThreads = true;
+//        if (TX_RXCount == 0) {
+//            TX_RXCount++;
         UnityUDPReceiveThread = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
                     int port = 9051;
-                    DatagramSocket socket = new DatagramSocket();
-                    socket.connect(InetAddress.getByName(UnityUdpIpAddress), port);
-                    String message = "hello";
-                    socket.send(new DatagramPacket(message.getBytes(), message.length()));
+                    RXsocket = new DatagramSocket();
+                    RXsocket.connect(InetAddress.getByName(UnityUdpIpAddress), port);
+                    String message = "Connection Acquired";
+                    RXsocket.send(new DatagramPacket(message.getBytes(), message.length()));
                     while (canRunUDPThreads) {
                         try {
                             byte[] buffer = new byte[1024];
                             DatagramPacket response = new DatagramPacket(buffer, buffer.length);
-                            socket.receive(response);
+                            RXsocket.receive(response);
                             String responseText = new String(buffer, 0, response.getLength());
 
                             JSONObject jsonObject = new JSONObject(responseText);
@@ -93,8 +99,9 @@ public class DcMotorMaster {
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
+
                     }
-                    socket.close();
+//                    RXsocket.close();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -106,8 +113,9 @@ public class DcMotorMaster {
             public void run() {
                 try {
                     int port = 9050;
-                    DatagramSocket socket = new DatagramSocket();
-                    socket.connect(InetAddress.getByName(UnityUdpIpAddress), port);
+                    TXsocket = new DatagramSocket();
+                    TXsocket.connect(InetAddress.getByName(UnityUdpIpAddress), port);
+                    System.out.println("gouing uto thread");
                     while (canRunUDPThreads) {
                         Thread.sleep(30);
                         try {
@@ -121,12 +129,30 @@ public class DcMotorMaster {
                             jsonObject.put("motor7", DcMotorMaster.motorImpl7.power);
                             jsonObject.put("motor8", DcMotorMaster.motorImpl8.power);
                             String message = jsonObject.toString();
-                            socket.send(new DatagramPacket(message.getBytes(), message.length()));
+                            TXsocket.send(new DatagramPacket(message.getBytes(), message.length()));
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
                     }
-                    socket.close();
+                    long currTime = System.currentTimeMillis();
+                    while(System.currentTimeMillis() > currTime + 1000) {
+                        try {
+                            JSONObject jsonObject = new JSONObject();
+                            jsonObject.put("motor1", DcMotorMaster.motorImpl1.power);
+                            jsonObject.put("motor2", DcMotorMaster.motorImpl2.power);
+                            jsonObject.put("motor3", DcMotorMaster.motorImpl3.power);
+                            jsonObject.put("motor4", DcMotorMaster.motorImpl4.power);
+                            jsonObject.put("motor5", DcMotorMaster.motorImpl5.power);
+                            jsonObject.put("motor6", DcMotorMaster.motorImpl6.power);
+                            jsonObject.put("motor7", DcMotorMaster.motorImpl7.power);
+                            jsonObject.put("motor8", DcMotorMaster.motorImpl8.power);
+                            String message = jsonObject.toString();
+                            TXsocket.send(new DatagramPacket(message.getBytes(), message.length()));
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+//                    TXsocket.close();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -135,4 +161,5 @@ public class DcMotorMaster {
         UnityUDPReceiveThread.start();
         UnityUDPSendThread.start();
     }
+//    }
 }
