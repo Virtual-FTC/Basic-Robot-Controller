@@ -31,6 +31,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
 
 package com.qualcomm.robotcore.eventloop.opmode;
 
+import com.qualcomm.robotcore.hardware.DcMotorMaster;
 import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.robocol.TelemetryMessage;
@@ -131,7 +132,9 @@ public abstract class OpMode {
    *
    * The stop method is optional. By default this method takes no action.
    */
-  public void stop() {};
+  public void stop() {
+    DcMotorMaster.canRunUDPThreads = false;
+  };
 
   /**
    * Requests that this OpMode be shut down if it the currently active opMode, much as if the stop

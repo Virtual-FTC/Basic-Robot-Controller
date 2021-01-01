@@ -1,5 +1,6 @@
 package com.qualcomm.robotcore.eventloop.opmode;
 
+import com.qualcomm.robotcore.hardware.DcMotorMaster;
 import com.qualcomm.robotcore.hardware.TimestampedI2cData;
 import com.qualcomm.robotcore.util.RobotLog;
 import com.qualcomm.robotcore.util.ThreadPool;
@@ -207,6 +208,7 @@ public abstract class LinearOpMode extends OpMode {
      */
     @Override
     final public void stop() {
+        DcMotorMaster.canRunUDPThreads = false;
 
         /*
          * Get out of dodge. Been here, done this.

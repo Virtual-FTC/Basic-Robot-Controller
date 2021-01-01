@@ -235,7 +235,6 @@ public class DcMotorImpl implements DcMotor {
     }
 
     private void checkMotorNumberAndUpdateMaster(String name) {
-        System.out.println("nameme: " + name);
         if (name.equals("frontLeft")) {
             DcMotorMaster.setDcMotor1(this);
         } else if (name.equals("frontRight")) {
