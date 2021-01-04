@@ -157,8 +157,6 @@ public abstract class LinearOpMode extends OpMode {
     @Override
     final public void init() {
         super.init();
-        DcMotorMaster.start();
-
         this.executorService = ThreadPool.newSingleThreadExecutor("LinearOpMode");
         this.helper = new LinearOpModeHelper();
         this.isStarted = false;

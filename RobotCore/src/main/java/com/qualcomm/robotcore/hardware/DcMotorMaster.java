@@ -57,7 +57,7 @@ public class DcMotorMaster {
 
     public static Thread UnityUDPSendThread;
     public static Thread UnityUDPReceiveThread;
-    static String UnityUdpIpAddress = "35.197.110.179z";
+    static String UnityUdpIpAddress = "35.197.110.179";
 //    public static boolean canRunUDPThreads;
 //    private static DatagramSocket RXsocket;
 //    private static DatagramSocket TXsocket;
