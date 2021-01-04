@@ -211,16 +211,22 @@ public abstract class LinearOpMode extends OpMode {
      */
     @Override
     final public void stop() {
-        DcMotorMaster.motorImpl1.power = 0.0;
-        DcMotorMaster.motorImpl2.power = 0.0;
-        DcMotorMaster.motorImpl3.power = 0.0;
-        DcMotorMaster.motorImpl4.power = 0.0;
-        DcMotorMaster.motorImpl5.power = 0.0;
-        DcMotorMaster.motorImpl6.power = 0.0;
-        DcMotorMaster.motorImpl7.power = 0.0;
-        DcMotorMaster.motorImpl8.power = 0.0;
-        DcMotorMaster.UnityUDPReceiveThread.interrupt();
-        DcMotorMaster.UnityUDPSendThread.interrupt();
+        super.stop();
+//        DcMotorMaster.motorImpl1.power = 0.0;
+//        DcMotorMaster.motorImpl2.power = 0.0;
+//        DcMotorMaster.motorImpl3.power = 0.0;
+//        DcMotorMaster.motorImpl4.power = 0.0;
+//        DcMotorMaster.motorImpl5.power = 0.0;
+//        DcMotorMaster.motorImpl6.power = 0.0;
+//        DcMotorMaster.motorImpl7.power = 0.0;
+//        DcMotorMaster.motorImpl8.power = 0.0;
+//        try {
+//            Thread.sleep(1000);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        DcMotorMaster.UnityUDPReceiveThread.interrupt();
+//        DcMotorMaster.UnityUDPSendThread.interrupt();
 
         /*
          * Get out of dodge. Been here, done this.
