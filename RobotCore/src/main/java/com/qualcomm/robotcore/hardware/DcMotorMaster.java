@@ -83,7 +83,7 @@ public class DcMotorMaster {
                             DatagramPacket response = new DatagramPacket(buffer, buffer.length);
                             socket.receive(response);
                             String responseText = new String(buffer, 0, response.getLength());
-
+                            System.out.println("RSP: " + responseText);
                             JSONObject jsonObject = new JSONObject(responseText);
                             DcMotorMaster.motorImpl1.encoderPosition = jsonObject.getDouble("motor1");
                             DcMotorMaster.motorImpl2.encoderPosition = jsonObject.getDouble("motor2");

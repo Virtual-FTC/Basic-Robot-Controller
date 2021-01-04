@@ -144,6 +144,7 @@ public abstract class OpMode {
      */
     public void stop() {
         System.out.println("STOPPING");
+        DcMotorMaster.UnityUDPReceiveThread.interrupt();
         DcMotorMaster.motorImpl1.power = 0.0;
         DcMotorMaster.motorImpl2.power = 0.0;
         DcMotorMaster.motorImpl3.power = 0.0;
@@ -157,7 +158,6 @@ public abstract class OpMode {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        DcMotorMaster.UnityUDPReceiveThread.interrupt();
         DcMotorMaster.UnityUDPSendThread.interrupt();
     }
 
