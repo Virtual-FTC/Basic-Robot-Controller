@@ -1,5 +1,6 @@
 package com.qualcomm.robotcore.eventloop.opmode;
 
+import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorMaster;
 import com.qualcomm.robotcore.hardware.TimestampedI2cData;
 import com.qualcomm.robotcore.util.RobotLog;
@@ -218,7 +219,8 @@ public abstract class LinearOpMode extends OpMode {
         DcMotorMaster.motorImpl6.power = 0.0;
         DcMotorMaster.motorImpl7.power = 0.0;
         DcMotorMaster.motorImpl8.power = 0.0;
-        DcMotorMaster.canRunUDPThreads = false;
+        DcMotorMaster.UnityUDPReceiveThread.interrupt();
+        DcMotorMaster.UnityUDPSendThread.interrupt();
 
         /*
          * Get out of dodge. Been here, done this.

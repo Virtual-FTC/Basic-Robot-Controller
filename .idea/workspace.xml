@@ -21,7 +21,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Blocks/Blocks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Blocks/Blocks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Hardware/Hardware.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Hardware/Hardware.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Inspection/Inspection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Inspection/Inspection.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/eventloop/opmode/LinearOpMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/eventloop/opmode/LinearOpMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/eventloop/opmode/OpMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/eventloop/opmode/OpMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/DcMotorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/DcMotorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/DcMotorMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/DcMotorMaster.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +35,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="192.168.49.1:5555" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_1" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -154,30 +160,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1605740942587" />
-    <state width="1877" height="421" key="GridCell.Tab.0.bottom" timestamp="1609493420165">
+    <state width="1877" height="342" key="GridCell.Tab.0.bottom" timestamp="1609714229759">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="421" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1609493420165" />
-    <state width="1877" height="421" key="GridCell.Tab.0.center" timestamp="1609493420164">
+    <state width="1877" height="342" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1609714229759" />
+    <state width="1877" height="342" key="GridCell.Tab.0.center" timestamp="1609714229757">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="421" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1609493420164" />
-    <state width="1877" height="421" key="GridCell.Tab.0.left" timestamp="1609493420164">
+    <state width="1877" height="342" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1609714229757" />
+    <state width="1877" height="342" key="GridCell.Tab.0.left" timestamp="1609714229757">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="421" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1609493420164" />
-    <state width="1877" height="421" key="GridCell.Tab.0.right" timestamp="1609493420164">
+    <state width="1877" height="342" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1609714229757" />
+    <state width="1877" height="342" key="GridCell.Tab.0.right" timestamp="1609714229757">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="421" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1609493420164" />
+    <state width="1877" height="342" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1609714229757" />
     <state x="92" y="92" width="1736" height="896" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1609449156087">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1609449156087" />
-    <state x="396" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1609453155655">
+    <state x="396" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1609719625320">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="396" y="324" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1609453155655" />
+    <state x="396" y="324" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1609719625320" />
     <state x="656" y="272" width="726" height="536" key="find.popup" timestamp="1609489776264">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

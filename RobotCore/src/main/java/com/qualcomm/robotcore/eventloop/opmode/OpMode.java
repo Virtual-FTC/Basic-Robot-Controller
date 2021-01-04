@@ -144,7 +144,8 @@ public abstract class OpMode {
     DcMotorMaster.motorImpl6.power = 0.0;
     DcMotorMaster.motorImpl7.power = 0.0;
     DcMotorMaster.motorImpl8.power = 0.0;
-    DcMotorMaster.canRunUDPThreads = false;
+    DcMotorMaster.UnityUDPReceiveThread.interrupt();
+    DcMotorMaster.UnityUDPSendThread.interrupt();
   };
 
   /**
