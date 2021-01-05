@@ -111,6 +111,7 @@ public class DcMotorMaster {
                     int port = 9050;
                     DatagramSocket socket = new DatagramSocket();
                     socket.connect(InetAddress.getByName(UnityUdpIpAddress), port);
+                    socket.send(new DatagramPacket("reset".getBytes(), "reset".length()));
                     while (true) {
                         Thread.sleep(30);
                         try {
