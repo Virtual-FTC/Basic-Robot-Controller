@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: org.openftc:tfod-ftc-repackaged:5.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tfod-ftc-repackaged-5.0.aar/8baf034f3819d3842ed869d9e6efece0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tfod-ftc-repackaged-5.0.aar/8baf034f3819d3842ed869d9e6efece0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tfod-ftc-repackaged-5.0.aar/8baf034f3819d3842ed869d9e6efece0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/068911879acc57b4148fc91cbd11f138/tfod-ftc-repackaged-5.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/068911879acc57b4148fc91cbd11f138/tfod-ftc-repackaged-5.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/068911879acc57b4148fc91cbd11f138/tfod-ftc-repackaged-5.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
