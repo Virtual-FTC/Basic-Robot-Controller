@@ -345,8 +345,10 @@ public class DcMotorImpl implements DcMotor {
      * @return double indicating current position
      */
     synchronized public int getCurrentPosition() {
-        int position = controller.getMotorCurrentPosition(portNumber);
-        return adjustPosition(position);
+//        System.out.println("getCurrentPosition: " + (encoderPosition - encoderBasePosition) + ", encPos: " + encoderPosition + ", encBasePos: " + encoderBasePosition);
+        return (int) (encoderPosition - encoderBasePosition);
+//        int position = controller.getMotorCurrentPosition(portNumber);
+//        return adjustPosition(position);
     }
 
     protected int adjustPosition(int position) {
@@ -369,6 +371,9 @@ public class DcMotorImpl implements DcMotor {
      * @param mode run mode
      */
     synchronized public void setMode(RunMode mode) {
+        if(mode == RunMode.STOP_AND_RESET_ENCODER) {
+            encoderBasePosition = encoderPosition;
+        }
         mode = mode.migrate();
         internalSetMode(mode);
     }

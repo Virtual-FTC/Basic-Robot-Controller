@@ -1,5 +1,6 @@
 package com.qualcomm.robotcore.eventloop.opmode;
 
+import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorMaster;
 import com.qualcomm.robotcore.hardware.TimestampedI2cData;
 import com.qualcomm.robotcore.util.RobotLog;
@@ -156,8 +157,6 @@ public abstract class LinearOpMode extends OpMode {
     @Override
     final public void init() {
         super.init();
-        DcMotorMaster.start();
-
         this.executorService = ThreadPool.newSingleThreadExecutor("LinearOpMode");
         this.helper = new LinearOpModeHelper();
         this.isStarted = false;
@@ -210,15 +209,22 @@ public abstract class LinearOpMode extends OpMode {
      */
     @Override
     final public void stop() {
-        DcMotorMaster.motorImpl1.power = 0.0;
-        DcMotorMaster.motorImpl2.power = 0.0;
-        DcMotorMaster.motorImpl3.power = 0.0;
-        DcMotorMaster.motorImpl4.power = 0.0;
-        DcMotorMaster.motorImpl5.power = 0.0;
-        DcMotorMaster.motorImpl6.power = 0.0;
-        DcMotorMaster.motorImpl7.power = 0.0;
-        DcMotorMaster.motorImpl8.power = 0.0;
-        DcMotorMaster.canRunUDPThreads = false;
+        super.stop();
+//        DcMotorMaster.motorImpl1.power = 0.0;
+//        DcMotorMaster.motorImpl2.power = 0.0;
+//        DcMotorMaster.motorImpl3.power = 0.0;
+//        DcMotorMaster.motorImpl4.power = 0.0;
+//        DcMotorMaster.motorImpl5.power = 0.0;
+//        DcMotorMaster.motorImpl6.power = 0.0;
+//        DcMotorMaster.motorImpl7.power = 0.0;
+//        DcMotorMaster.motorImpl8.power = 0.0;
+//        try {
+//            Thread.sleep(1000);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        DcMotorMaster.UnityUDPReceiveThread.interrupt();
+//        DcMotorMaster.UnityUDPSendThread.interrupt();
 
         /*
          * Get out of dodge. Been here, done this.
