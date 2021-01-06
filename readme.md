@@ -1,2 +1,2 @@
 # Basic Virtual Controller
-Simple version made for Blocks and OnBotJava users!
+Official Basic Virtual Robot Controller Release for the Virtual Robot Simulator
