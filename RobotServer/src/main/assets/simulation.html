@@ -47,7 +47,7 @@
 var ws;
 function connectToWebSocketServer() {
 	if ("WebSocket" in window) {
-		ws = new WebSocket("ws://192.168.49.1:9876/echo");
+		ws = new WebSocket("ws://" + location.hostname + ":9876/echo");
 
 		ws.onopen = function() {
 		    alert("Connected");
