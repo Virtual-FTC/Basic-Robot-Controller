@@ -10,16 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e99090a-1959-476e-b0b4-097139fe7cc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Blocks/Blocks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Blocks/Blocks.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/FtcCommon/FtcCommon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/FtcCommon/FtcCommon.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/FtcRobotController/FtcRobotController.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/FtcRobotController/FtcRobotController.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Hardware/Hardware.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Hardware/Hardware.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Inspection/Inspection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Inspection/Inspection.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/OnBotJava/OnBotJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/OnBotJava/OnBotJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/RobotCore/RobotCore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/RobotCore/RobotCore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/RobotServer/RobotServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/RobotServer/RobotServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/TeamCode/TeamCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/TeamCode/TeamCode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotServer/src/main/assets/connection.html" beforeDir="false" afterPath="$PROJECT_DIR$/RobotServer/src/main/assets/connection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotServer/src/main/assets/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/RobotServer/src/main/assets/help.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RobotServer/src/main/assets/simulation.html" beforeDir="false" afterPath="$PROJECT_DIR$/RobotServer/src/main/assets/simulation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,9 +196,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="656" y="272" width="726" height="536" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1610693577337" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1610693567835">
+    <state x="616" y="250" key="run.anything.popup" timestamp="1610696108035">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1610693567835" />
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1610696108035" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1610696555663">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1610696555663" />
   </component>
 </project>

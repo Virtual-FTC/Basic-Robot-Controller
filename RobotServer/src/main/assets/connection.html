@@ -39,7 +39,7 @@
 
                 document.getElementById("id_network_name").innerHTML = rcInfo.networkName;
                 document.getElementById("id_passphrase").innerHTML = rcInfo.passphrase;
-                document.getElementById("id_server_url").innerHTML = rcInfo.serverUrl;
+<!--                document.getElementById("id_server_url").innerHTML = rcInfo.serverUrl;-->
 
                 hideElement(document.getElementById("id_span_connected"), false);
                 hideWhenAndroid(!uaIsAndroid);
@@ -49,7 +49,7 @@
                 } else {
                     var serverStatus = document.getElementById("id_server_status");
                     var formattedDate = rcInfo.timeServerStarted;
-                    var status = "Server OK (Running since " + formattedDate + ")";
+                    var status = "Basic VRC Server OK (Running since " + formattedDate + ")";
                     serverStatus.innerHTML = status;
                     removeClass(serverStatus, "text-error");
                     addClass(serverStatus, "text-ok");
@@ -115,7 +115,7 @@
 </script>
 
 <div class="bordered-text-block">
-<h1>Robot Controller Connection Info</h1>
+<h1>Basic VRC Connection Info</h1>
 <p class="web_server_banter">The <span id="id_span_connected">connected </span>robot controller resides on the wireless network named:</p>
 <p class="web_server_datum"><span id="id_network_name">(network)</span></p>
 
@@ -123,16 +123,15 @@
 <p class="web_server_datum"><span id="id_passphrase">(passphrase)</span></p>
 
 <div id="id_when_android">
-<p class="web_server_banter">To <em>remotely</em> connect to the controller, connect your laptop's wireless adapter to this network, using
-    the passphrase to gain access. Once connected, enter the following address into your web
-    browser:</p>
-<p class="web_server_datum"><span id="id_server_url">(url)</span></p>
+    <p class="web_server_banter">To find the IP address to connect to in order to access the Basic VRC dashboard on your computer,
+        please go to the Settings app, look Under Wifi, click on a gear icon and it will show an IPv4 address (ex: 192.168.1.62).</p>
+<!--<p class="web_server_datum"><span id="id_server_url">(url)</span></p>-->
 </div>
 </div>
 
 <div class="bordered-text-block">
 <p class="web_server_banter_header">Robot controller status:</p>
-<p class="web_server_datum"><span id="id_server_status">(status)</span></p>
+<p class="web_server_datum"><span id="id_server_status">Basic VRC Server Starting</span></p>
 
 <p class="web_server_banter_header">Active connections:</p>
 <div id="id_active_connections"><p class="active_connections_none">&lt;none&gt;</p></div>
