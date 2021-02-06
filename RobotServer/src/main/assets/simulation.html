@@ -17,6 +17,16 @@
         run, click Init, and
         then click Start. Click Stop if you want to end the program early.</p>
 
+    <div class="form-group">
+        <label for="robot_number">Please Select a Robot To Control</label>
+        <select id="robot_number" class="form-control" style="max-width: 300px">
+            <option value="robot1">Robot 1</option>
+            <option value="robot2">Robot 2</option>
+            <option value="robot3">Robot 3</option>
+            <option value="robot4">Robot 4</option>
+        </select>
+    </div>
+
     <button id="id_connect_button"
             onclick="connectToWebSocketServer()">Connect
     </button>
@@ -79,6 +89,7 @@ function connectToWebSocketServer() {
 	}
 }
 function initProgram() {
+    ws.send("ROBOT NUMBER: " + (robot_number.selectedIndex + 1));
     ws.send("INIT:" + id_programs.value);
     document.getElementById("id_init_button").disabled = true;
     document.getElementById("id_start_button").disabled = false;

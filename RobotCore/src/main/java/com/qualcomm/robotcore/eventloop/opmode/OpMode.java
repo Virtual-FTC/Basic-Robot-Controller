@@ -100,10 +100,9 @@ public abstract class OpMode {
 
 
     public void init() {
-        DcMotorMaster.start();
+        DcMotorMaster.init();
     }
 
-    ;
 
     /**
      * User defined init_loop method

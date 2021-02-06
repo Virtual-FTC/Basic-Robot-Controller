@@ -79,6 +79,7 @@ import com.qualcomm.robotcore.eventloop.EventLoopManager;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.OpModeRegister;
 import com.qualcomm.robotcore.exception.RobotCoreException;
+import com.qualcomm.robotcore.hardware.DcMotorMaster;
 import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.LynxModuleMetaList;
@@ -310,21 +311,25 @@ public class FtcEventLoop extends FtcEventLoopBase {
         super.onMessage(conn, message);
         if (message.contains("INIT:")) {
             StringBuilder sb = new StringBuilder();
-            for(int i = 5; i < message.length(); i++) {
+            for (int i = 5; i < message.length(); i++) {
                 sb.append(message.charAt(i));
             }
             String extra = sb.toString();
             handleCommandInitOpMode(extra);
         } else if (message.contains("RUN:")) {
             StringBuilder sb = new StringBuilder();
-            for(int i = 4; i < message.length(); i++) {
+            for (int i = 4; i < message.length(); i++) {
                 sb.append(message.charAt(i));
             }
             String extra = sb.toString();
             System.out.println("EXTRA: " + extra);
             handleCommandRunOpMode(extra);
+            DcMotorMaster.start();
         } else if (message.contains("STOP")) {
             handleCommandInitOpMode("$Stop$Robot$");
+            DcMotorMaster.stop();
+        } else if (message.contains("ROBOT NUMBER: ")) {
+            DcMotorMaster.robotNumber = Integer.parseInt(message.replace("ROBOT NUMBER: ", ""));
         }
     }
 
