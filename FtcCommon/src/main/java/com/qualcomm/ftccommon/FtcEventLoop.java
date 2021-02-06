@@ -326,8 +326,13 @@ public class FtcEventLoop extends FtcEventLoopBase {
             handleCommandRunOpMode(extra);
             DcMotorMaster.start();
         } else if (message.contains("STOP")) {
-            handleCommandInitOpMode("$Stop$Robot$");
             DcMotorMaster.stop();
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            handleCommandInitOpMode("$Stop$Robot$");
         } else if (message.contains("ROBOT NUMBER: ")) {
             DcMotorMaster.robotNumber = Integer.parseInt(message.replace("ROBOT NUMBER: ", ""));
         }

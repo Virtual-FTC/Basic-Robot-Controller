@@ -165,6 +165,7 @@ public class DcMotorMaster {
                     Thread.sleep(1500);
                     canUseSendSocket = false;
                     canUseReceiveSocket = false;
+                    Thread.sleep(1000);
                     UnityUDPSendThread.interrupt();
                     UnityUDPReceiveThread.interrupt();
                     System.out.println("DONE INTERRUPTING PROGRAM");
