@@ -141,6 +141,7 @@ public class DcMotorMaster {
                 }
             }
         });
+        start();
     }
 
     public static void start() {

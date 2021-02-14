@@ -151,12 +151,12 @@ public class FtcEventLoopHandler implements BatteryChecker.BatteryWatcher {
 
     // Close motor and servo controllers first, since some of them may reside on top
     // of legacy modules: closing first just keeps things more graceful
-    closeMotorControllers(hardwareMap);
-    closeServoControllers(hardwareMap);
+//    closeMotorControllers(hardwareMap);
+//    closeServoControllers(hardwareMap);
 
     // Now close everything that's USB-connected (yes that might re-close a motor or servo
     // controller, but that's ok
-    closeAutoCloseOnTeardown(hardwareMap);
+//    closeAutoCloseOnTeardown(hardwareMap);
   }
 
 

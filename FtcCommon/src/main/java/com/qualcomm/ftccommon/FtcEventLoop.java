@@ -324,7 +324,7 @@ public class FtcEventLoop extends FtcEventLoopBase {
             String extra = sb.toString();
             System.out.println("EXTRA: " + extra);
             handleCommandRunOpMode(extra);
-            DcMotorMaster.start();
+//            DcMotorMaster.start();
         } else if (message.contains("STOP")) {
             DcMotorMaster.stop();
             try {
