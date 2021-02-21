@@ -217,31 +217,30 @@ import java.util.List;
     @Deprecated
     public boolean isAirplaneModeOn()
         {
-        return WifiUtil.isAirplaneModeOn();
+        return true;
         }
 
     @Deprecated
     public boolean isBluetoothOn()
         {
-        return WifiUtil.isBluetoothOn();
+        return false;
         }
 
     @Deprecated
     public boolean isWifiEnabled()
         {
-        return WifiUtil.isWifiEnabled();
+        return true;
         }
 
     @Deprecated
     public boolean isWifiConnected()
         {
-        return WifiUtil.isWifiConnected();
+        return true;
         }
 
     public boolean isWifiDirectConnected()
         {
-        NetworkInfo.State state = getWifiDirectState();
-        return state== NetworkInfo.State.CONNECTED || state== NetworkInfo.State.CONNECTING;
+        return true;
         }
 
     /** synchronously disconnects from wifi direct. must not be called on the callback looper thread */
