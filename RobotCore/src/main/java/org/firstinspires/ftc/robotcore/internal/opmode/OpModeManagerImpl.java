@@ -284,7 +284,7 @@ public class OpModeManagerImpl implements OpModeServices, OpModeManagerNotifier 
 
   // called on the event loop thread
   public void stopActiveOpMode() {
-//    callActiveOpModeStop();
+    callActiveOpModeStop();
     RobotLog.stopMatchLogging();
     initActiveOpMode(DEFAULT_OP_MODE_NAME);
   }
@@ -327,7 +327,7 @@ public class OpModeManagerImpl implements OpModeServices, OpModeManagerNotifier 
 
     if (opModeSwapNeeded) {
       if(!skipCallToStop || /*Paranoia*/(activeOpMode instanceof LinearOpMode)) { //Skipping call to stop() would be VERY bad for linear
-//        callActiveOpModeStop();
+        callActiveOpModeStop();
       }
       skipCallToStop = false;
       performOpModeSwap();
