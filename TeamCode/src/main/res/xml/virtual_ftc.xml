@@ -9,10 +9,10 @@
             <LynxEmbeddedIMU name="imu" port="0" bus="0" />
         </LynxModule>
         <LynxModule name="Expansion Hub 10" port="10">
-            <NeveRest20Gearmotor name="ringCollection" port="0" />
-            <NeveRest20Gearmotor name="ringLoader" port="1" />
-            <NeveRest20Gearmotor name="ringShooter" port="2" />
-            <NeveRest20Gearmotor name="wobbleActuator" port="3" />
+            <NeveRest20Gearmotor name="intake" port="0" />
+            <NeveRest20Gearmotor name="hopper" port="1" />
+            <NeveRest20Gearmotor name="leftShooter" port="2" />
+            <NeveRest20Gearmotor name="rightShooter" port="3" />
             <LynxEmbeddedIMU name="imu 1" port="0" bus="0" />
         </LynxModule>
     </LynxUsbDevice>

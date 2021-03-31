@@ -243,13 +243,13 @@ public class DcMotorImpl implements DcMotor {
             DcMotorMaster.setDcMotor3(this);
         } else if (name.equals("backRight")) {
             DcMotorMaster.setDcMotor4(this);
-        } else if (name.equals("ringCollection")) {
+        } else if (name.equals("intake")) {
             DcMotorMaster.setDcMotor5(this);
-        } else if (name.equals("ringLoader")) {
+        } else if (name.equals("hopper")) {
             DcMotorMaster.setDcMotor6(this);
-        } else if (name.equals("ringShooter")) {
+        } else if (name.equals("leftShooter")) {
             DcMotorMaster.setDcMotor7(this);
-        } else if (name.equals("wobbleActuator")) {
+        } else if (name.equals("rightShooter")) {
             DcMotorMaster.setDcMotor8(this);
 //            DcMotorMaster.start();
         }
