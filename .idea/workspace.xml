@@ -9,7 +9,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e99090a-1959-476e-b0b4-097139fe7cc1" name="Default Changelist" comment="" />
+    <list default="true" id="5e99090a-1959-476e-b0b4-097139fe7cc1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/TeamCode/release/TeamCode-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/release/TeamCode-release.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/release/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/release/output-metadata.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
