@@ -310,7 +310,7 @@ import java.util.List;
                             WifiP2pManager.ActionListener.class);
         if (method != null)
             {
-//            ClassUtil.invoke(this.getWifiP2pManager(), method, this.getWifiP2pChannel(), lc, oc, listener);
+            ClassUtil.invoke(this.getWifiP2pManager(), method, this.getWifiP2pChannel(), lc, oc, listener);
             }
         else
             {
@@ -350,50 +350,50 @@ import java.util.List;
                 {
                 case WifiManager.WIFI_STATE_CHANGED_ACTION: {
                     int state = intent.getIntExtra(WifiManager.EXTRA_WIFI_STATE, 0);
-//                    wifiState = WifiState.from(state);
+                    wifiState = WifiState.from(state);
                     RobotLog.vv(TAG, "wifiState=%s", wifiState);
                     break;
                     }
                 case WifiDirectPersistentGroupManager.WIFI_P2P_PERSISTENT_GROUPS_CHANGED_ACTION: {
                     RobotLog.vv(TAG, "wifi direct remembered groups cleared");
                     // Let our network peer know if he's connected and listening
-//                    NetworkConnectionHandler.getInstance().sendCommand(new Command(RobotCoreCommandList.CMD_NOTIFY_WIFI_DIRECT_REMEMBERED_GROUPS_CHANGED));
+                    NetworkConnectionHandler.getInstance().sendCommand(new Command(RobotCoreCommandList.CMD_NOTIFY_WIFI_DIRECT_REMEMBERED_GROUPS_CHANGED));
                     break;
                     }
                 case WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION: {
-//                    int state = intent.getIntExtra(WifiP2pManager.EXTRA_WIFI_STATE, 0);
-//                    isWifiP2pEnabled = (state == WifiP2pManager.WIFI_P2P_STATE_ENABLED);
+                    int state = intent.getIntExtra(WifiP2pManager.EXTRA_WIFI_STATE, 0);
+                    isWifiP2pEnabled = (state == WifiP2pManager.WIFI_P2P_STATE_ENABLED);
                     RobotLog.vv(TAG, "wifiP2pEnabled=%s", isWifiP2pEnabled);
                     break;
                     }
                 case WifiP2pManager.WIFI_P2P_PEERS_CHANGED_ACTION: {
-//                    WifiP2pDeviceList wifiP2pDeviceList = intent.getParcelableExtra(WifiP2pManager.EXTRA_P2P_DEVICE_LIST);
-//                    dump(wifiP2pDeviceList);
+                    WifiP2pDeviceList wifiP2pDeviceList = intent.getParcelableExtra(WifiP2pManager.EXTRA_P2P_DEVICE_LIST);
+                    dump(wifiP2pDeviceList);
                     break;
                     }
                 case WifiP2pManager.WIFI_P2P_CONNECTION_CHANGED_ACTION: {
-//                    NetworkInfo networkInfo = intent.getParcelableExtra(WifiP2pManager.EXTRA_NETWORK_INFO);
-//                    WifiP2pInfo wifip2pinfo = intent.getParcelableExtra(WifiP2pManager.EXTRA_WIFI_P2P_INFO);
-//                    WifiP2pGroup wifiP2pGroup = intent.getParcelableExtra(WifiP2pManager.EXTRA_WIFI_P2P_GROUP);
+                    NetworkInfo networkInfo = intent.getParcelableExtra(WifiP2pManager.EXTRA_NETWORK_INFO);
+                    WifiP2pInfo wifip2pinfo = intent.getParcelableExtra(WifiP2pManager.EXTRA_WIFI_P2P_INFO);
+                    WifiP2pGroup wifiP2pGroup = intent.getParcelableExtra(WifiP2pManager.EXTRA_WIFI_P2P_GROUP);
 
-//                    wifiP2pState = networkInfo.getState();
-//
-//                    RobotLog.dd(TAG, "connection changed: networkInfo.state=%s", networkInfo.getState());
-//                    dump(networkInfo);
-//                    dump(wifip2pinfo);
-//                    dump(wifiP2pGroup);
+                    wifiP2pState = networkInfo.getState();
+
+                    RobotLog.dd(TAG, "connection changed: networkInfo.state=%s", networkInfo.getState());
+                    dump(networkInfo);
+                    dump(wifip2pinfo);
+                    dump(wifiP2pGroup);
 
                     break;
                     }
                 case WifiP2pManager.WIFI_P2P_THIS_DEVICE_CHANGED_ACTION: {
-//                    WifiP2pDevice wifiP2pDevice = intent.getParcelableExtra(WifiP2pManager.EXTRA_WIFI_P2P_DEVICE);
-//                    dump(wifiP2pDevice);
+                    WifiP2pDevice wifiP2pDevice = intent.getParcelableExtra(WifiP2pManager.EXTRA_WIFI_P2P_DEVICE);
+                    dump(wifiP2pDevice);
                     break;
                     }
                 case WifiP2pManager.WIFI_P2P_DISCOVERY_CHANGED_ACTION: {
-//                    int state = intent.getIntExtra(WifiP2pManager.EXTRA_DISCOVERY_STATE, 0);
-//                    boolean discovering = (state == WifiP2pManager.WIFI_P2P_DISCOVERY_STARTED);
-//                    RobotLog.vv(TAG, "p2p discoverPeers()=%s", discovering);
+                    int state = intent.getIntExtra(WifiP2pManager.EXTRA_DISCOVERY_STATE, 0);
+                    boolean discovering = (state == WifiP2pManager.WIFI_P2P_DISCOVERY_STARTED);
+                    RobotLog.vv(TAG, "p2p discoverPeers()=%s", discovering);
                     break;
                     }
                 }
@@ -429,26 +429,26 @@ import java.util.List;
 
         protected void dump(NetworkInfo info)
             {
-//            Assert.assertNotNull(info);
+            Assert.assertNotNull(info);
             RobotLog.vv(TAG, "NetworkInfo: %s", info.toString());
             }
 
         protected void dump(WifiP2pInfo info)
             {
-//            Assert.assertNotNull(info);
+            Assert.assertNotNull(info);
             RobotLog.vv(TAG, "WifiP2pInfo: %s", info.toString());
             }
 
         protected void dump(WifiP2pGroup info)
             {
-//            Assert.assertNotNull(info);
+            Assert.assertNotNull(info);
             RobotLog.vv(TAG, "WifiP2pGroup: %s", (info.toString().replace("\n ", ", ")));
             }
         }
 
     protected static String format(WifiP2pDevice wifiP2pDevice)
         {
-        return "";//wifiP2pDevice.toString().replace(": ","=").replace("\n "," ");
+        return wifiP2pDevice.toString().replace(": ","=").replace("\n "," ");
         }
 
 
