@@ -9,15 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e99090a-1959-476e-b0b4-097139fe7cc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/FtcRobotController/FtcRobotController.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/FtcRobotController/FtcRobotController.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Hardware/Hardware.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Hardware/Hardware.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FtcCommon/src/main/java/com/qualcomm/ftccommon/FtcEventLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/FtcCommon/src/main/java/com/qualcomm/ftccommon/FtcEventLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FtcCommon/src/main/java/com/qualcomm/ftccommon/FtcEventLoopHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/FtcCommon/src/main/java/com/qualcomm/ftccommon/FtcEventLoopHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/DcMotorMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/DcMotorMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/org/firstinspires/ftc/robotcore/internal/opmode/OpModeManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/RobotCore/src/main/java/org/firstinspires/ftc/robotcore/internal/opmode/OpModeManagerImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="5e99090a-1959-476e-b0b4-097139fe7cc1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
