@@ -17,14 +17,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/modules/Inspection/Inspection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Inspection/Inspection.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/RobotServer/RobotServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/RobotServer/RobotServer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/org/firstinspires/ftc/robotcore/internal/network/WifiDirectAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/RobotCore/src/main/java/org/firstinspires/ftc/robotcore/internal/network/WifiDirectAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcCommon/src/main/java/com/qualcomm/ftccommon/UpdateUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/FtcCommon/src/main/java/com/qualcomm/ftccommon/UpdateUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/DcMotorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/RobotCore/src/main/java/com/qualcomm/robotcore/hardware/DcMotorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/src/main/res/xml/virtual_ftc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/src/main/res/xml/virtual_ftc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_1" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="HGAHABB6" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -189,14 +191,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1609449156087" />
-    <state x="396" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1612688513317">
+    <state x="396" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1615751168249">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="396" y="324" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1612688513317" />
-    <state x="656" y="272" width="726" height="536" key="find.popup" timestamp="1615146096624">
+    <state x="396" y="324" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1615751168249" />
+    <state x="656" y="272" width="726" height="536" key="find.popup" timestamp="1617174367241">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="656" y="272" width="726" height="536" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1615146096624" />
+    <state x="656" y="272" width="726" height="536" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1617174367241" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1610696108035">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

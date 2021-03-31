@@ -165,7 +165,7 @@ public class UpdateUI {
       activity.runOnUiThread(new Runnable() {
         @Override
         public void run() {
-          textDeviceName.setText(name);
+          textDeviceName.setText("Basic VRC v1.1");
         }
       });
     }
